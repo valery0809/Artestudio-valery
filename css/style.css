@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300;400;700 & display=swap');
+/*configuracion inicial */
+/* crea constantes de diseño */
+:root{
+    /* colores */ 
+
+    --colorencabezado:#7c0cde;
+    --colorpie:#da8b13;
+    --colorEnlace:#291d9a;
+    --colorEnlaseSobre:#f3e00a;
+    /* fuente */
+    --textos:"roboto",sans-serif;
+    --tamTitulo:4.3rem;   
+}
+
+/* el sombolo *, es el selector universal en css */
+*{
+    box-sizing: border-box;
+}
+/* para escribir una clase, que esta en el htm, se escribe con un punto .home-wrapper */
+
+
+.home-wrapper{
+    /* imagen fondo */ 
+    background-image: url('../images/fondito.pj');
+    background-size: cover;
+}
+/* selector de encabezado header */
+header{
+    width: 100%;
+    background-color: var(--colorencabezado) ;
+    position: fixed;
+    /* espaciado */
+    padding: 10px 0;
+}
+/* cambiar de tamaño al logo */
+header img{
+    width: 200px;
+}
+
+/* organizar el menu */
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header nav a{
+    color: var(--colorenlace);
+    text-decoration: none;
+    margin: 5px;
+}
+
+/* crear los estilos de la seccion home */
+/*  los ide en css se escriben con el simbolo de # */
+#home{
+    /* texto centrado */
+    text-align: center;
+    /* espaciados superior e inferior */
+padding: 250px 0 250px;
+}
+
+/* las clases se representan por un. */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* utilizar el selector de la etiqueta section */
+section{
+    /* espaciado superior */
+    padding-top: 80px;
+}
+/*  la seccion de home, aplicar estilos al titulo novedades */
+
+#home h2{
+
+    /* fuente */
+    font-family: var(--textos);
+    /* color de fuente  */
+    color: #fff;
+    /* tamaño de fuente */
+    font-size: var(--tamTitulo);
+/* negrita al titulo */
+font-weight: bold;
+
+    
+}
+/* aplicar estilo al texto enla seccion home */
+#home p{
+    font-family: var(--textos);
+    font-size: 2.1rem;
+    color: #fff;
+}
+/* seccion cine */
+#cine .box{
+    display:inline-block; 
+    /* se divide el 100% por 3 */
+    width: 33%;
+    padding: 8px;
+}
+
+#cine .box img{
+    width: 100%;
+}
+
+/* seccion teatro */
+
+#teatro .box{
+    display:inline-block; 
+    /* se divide el 100% por 3 */
+    width: 33%;
+    padding: 8px;
+}
+
+#teatro .box img{
+    width: 100%;
+}
+/* seccion musica */
+#musica .box{
+    display:inline-block; 
+    /* se divide el 100% por 3 */
+    width: 33%;
+    padding: 8px;
+}
+
+#musica .box img{
+    width: 100%;
+}
+
+/* para los titulos en las secciones */
+#teatro, #musica, #cine h2{
+        text-align: center !important;
+    font-family: var(--textos);
+    font-size: 1.5rem;
+    font-weight: bold !important;
+    margin-top: 90px;
+}
+
+#teatro, #musica, #cine p{
+    text-align: justify !important;
+font-family: var(--textos);
+font-size: 16px;
+
+}
+
+/* contacto */
+
+#contacto{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: #1f08ed;
+}
+
+#contacto input,textarea{
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* pie de pag- footer */
+footer{
+    width: 100%;
+    background-color: var(--colorpie);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
